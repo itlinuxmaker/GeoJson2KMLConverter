@@ -90,10 +90,33 @@ Once the virtual environment is enabled (or without a virtual environment), inst
 ```bash  
 pip install -r requirements.txt  
 ```
-#### 5. Run script
 
-Run the GeoJson2KML Converter by specifying the path to the JSON file you want to convert to KML format. Example:
-```bash  
-python src\GeoJson2KML\geoJson2Kml.py "Path\to\your\json-data"  
-```
 This guide will help you install and use the GeoJson2KML Converter on Windows. The steps to set up the virtual environment are optional but helpful to create an isolated environment for your project.
+
+## Utilization
+1. After you have downloaded the product **"Maps - your settings and personal places in Maps"** (only this product, no others!) to your computer via Google Takeout as a ZIP or TAR.GZ archive, unpack the archive.
+Then change to the directory in which the year folders (e.g. 2023, 2024) are located. By default, this directory is located in the path:
+```bash
+Takeout/Location History (Timeline)/Semantic Location History  
+```
+Alternatively, you can copy or move the year folders to another location and navigate to that directory.
+
+2. Start the script:
+
+*    For Linux/macOS:
+```Bash
+python3 /path/to/your/geoJson2Kml.py
+```
+* For Windows:
+```Bash
+python \path\to\your\geoJson2Kml.py      
+```
+3. Inputs:
+
+    Enter the start date and end date in the format YYYY-MM-DD.
+Choose whether you also want to add the routes (lines).
+
+#### Output
+The script creates a KML file in the current directory. The file name contains the start and end date of the period. 
+  
+  This allows you to optimally and individually save your timelines from Google Maps on your own storage media and display them in external tools.
