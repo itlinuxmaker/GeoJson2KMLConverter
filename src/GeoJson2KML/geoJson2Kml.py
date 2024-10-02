@@ -2,6 +2,7 @@ import os
 import json
 import simplekml
 from datetime import datetime, timezone
+import sys
 
 """
 GeoJson2Kml Converter
